@@ -2,14 +2,25 @@
 name = "gz-fuel"
 version = "0.1.0"
 edition = "2021"
+authors = ["Luca Della Vedova <lucadellavr@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+description = "Tools for interacting with the gz-fuel model repository"
+repository = "https://github.com/open-rmf/gz-fuel-rs"
+keywords = ["model", "gazebo"]
+categories = ["simulation", "api-bindings"]
+
+exclude = [
+    ".github/*"
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-futures-lite = "*"
+futures-lite = "2.6"
 serde = { version = "1", features = ["derive"] }
-serde_json = "*"
-dirs = "*"
-itertools = "*"
+serde_json = "1"
+dirs = "6"
+itertools = "0.14"
 ehttp = { version = "0.4", features = ["native-async"] }
-crossbeam-channel = "*"
+crossbeam-channel = "0.5"
